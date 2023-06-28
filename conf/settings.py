@@ -128,11 +128,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Configure the compressor
 COMPRESS_ROOT = BASE_DIR / 'theme/static'
-print(COMPRESS_ROOT)
 COMPRESS_ENABLED = True
 STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
 
 TAILWIND_APP_NAME = 'theme'
-INTERNAL_IPS = [
-    "127.0.0.1",'localhost'
-]
